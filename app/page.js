@@ -12,6 +12,9 @@ export default function Home() {
   const [token, setToken] = useState('');
 
 
+  localStorage.setItem('token', 'your_token_value');
+  
+
   // Проверка токена при монтировании компонента
   useEffect(() => {
     const storedToken = localStorage.getItem('token');
